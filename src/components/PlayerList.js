@@ -10,7 +10,7 @@ function PlayerList(props) {
             firstName={player.firstName} 
             jerseyNumber={player.jerseyNumber}
             lastName={player.lastName}
-            hobbie={player.hobbies}
+            hobbies={player.hobbies}
             />
         )
     })

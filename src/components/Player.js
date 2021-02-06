@@ -1,14 +1,15 @@
 function Player(props) {
 
-    const hobbies = props.hobbie.map(hobbie => {
-        return(
-            <li>{hobbie}</li>
-        )
-    })
+    const hobbies = props.hobbies.length
+    ? props.hobbies.map(hobby =>{return <li>{hobby}</li>})
+    : <p>None listed.</p>
+    
 
     return (
         <div>
-            <h3>{props.firstName} {props.lastName}, jersey number: {props.jerseyNumber}</h3>
+            <h3>{props.firstName} {props.lastName}:</h3>
+
+            <p>Jersey number is: {props.jerseyNumber}</p>
 
             <ul>{hobbies}</ul>
         </div>
